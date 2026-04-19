@@ -10,6 +10,7 @@
     'index.html': 'home', '': 'home',
     'about.html': 'about',
     'programs.html': 'programs',
+    'events.html': 'events',
     'involved.html': 'involved',
     'donate.html': 'donate',
     'contact.html': 'contact',
@@ -26,6 +27,7 @@
         <li><a href="index.html"    data-page="home">Home</a></li>
         <li><a href="about.html"    data-page="about">About</a></li>
         <li><a href="programs.html" data-page="programs">Programs</a></li>
+        <li><a href="events.html"   data-page="events">Events</a></li>
         <li><a href="involved.html" data-page="involved">Get Involved</a></li>
         <li><a href="contact.html"  data-page="contact">Contact</a></li>
         <li><a href="donate.html"   data-page="donate" class="nav-donate-btn">💖 Donate</a></li>
@@ -52,6 +54,7 @@
             <li><a href="index.html">🏠 Home</a></li>
             <li><a href="about.html">💜 About Us</a></li>
             <li><a href="programs.html">⭐ Programs</a></li>
+            <li><a href="events.html">📅 Events</a></li>
             <li><a href="involved.html">🤝 Get Involved</a></li>
           </ul>
         </div>
