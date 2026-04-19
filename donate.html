@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate — Unbreakable Chaney ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================  DONATE HERO  -->
+  <div class="donate-hero">
+    <div class="donate-bg-text">GIVE</div>
+    <div class="donate-hero-inner">
+      <p class="section-tag fade-up">Make a Difference 💖</p>
+      <h1 class="donate-title fade-up delay-1">
+        Your gift<br>
+        <span class="grad-word">breaks cycles. 🌈</span>
+      </h1>
+      <p class="donate-sub fade-up delay-2">
+        Every dollar you give directly supports trauma healing, youth development, and community resilience in New Albany, Indiana. We are a 501(c)(3) organization — all donations are tax-deductible. 💜
+      </p>
+    </div>
+
+    <!-- Floating sparkles -->
+    <span class="sparkle" style="position:absolute;top:25%;right:15%;animation-delay:0s">💎</span>
+    <span class="sparkle" style="position:absolute;top:50%;right:8%;animation-delay:-2s">✨</span>
+    <span class="sparkle" style="position:absolute;bottom:25%;right:20%;animation-delay:-1s">🌟</span>
+    <span class="sparkle" style="position:absolute;top:20%;right:35%;animation-delay:-3s">⭐</span>
+  </div>
+
+
+  <!-- ============================================================  FORM + IMPACT  -->
+  <div class="donate-section">
+
+    <!-- LEFT: Amount selector -->
+    <div>
+      <p class="section-tag">Choose an Amount 💰</p>
+      <h2 class="section-title" style="font-size:2.2rem;margin-bottom:32px;">How much would you like to give? 🌈</h2>
+
+      <div class="donate-amounts" id="donateAmounts">
+        <button class="amount-btn selected" onclick="selectAmount(this)">$25</button>
+        <button class="amount-btn" onclick="selectAmount(this)">$50</button>
+        <button class="amount-btn" onclick="selectAmount(this)">$100</button>
+        <button class="amount-btn" onclick="selectAmount(this)">$250</button>
+        <div class="donate-custom">
+          <span>$</span>
+          <input type="number" id="customAmount" placeholder="Enter custom amount" min="1">
+        </div>
+      </div>
+
+      <div style="display:flex;gap:14px;margin-bottom:32px;">
+        <button class="btn-rainbow" style="flex:1;">💖 Donate Once</button>
+        <button class="btn-outline" style="flex:1;">🔄 Give Monthly</button>
+      </div>
+
+      <p style="font-size:0.85rem;color:#9a8aaa;line-height:1.6;font-weight:700;">
+        🔒 Secure donation processing. Unbreakable Chaney is a registered 501(c)(3) nonprofit. Your donation is tax-deductible to the fullest extent of the law. EIN: [XX-XXXXXXX]
+      </p>
+    </div>
+
+    <!-- RIGHT: Impact breakdown -->
+    <div>
+      <p class="section-tag">Your Impact ⭐</p>
+      <h2 class="section-title" style="font-size:2.2rem;margin-bottom:32px;">See what your gift does. 💫</h2>
+
+      <div class="donate-impact">
+        <div class="impact-row">
+          <div class="impact-dollar">$25</div>
+          <div class="impact-text">Provides workshop materials for one youth participant in our mentorship program. 📚</div>
+        </div>
+        <div class="impact-row">
+          <div class="impact-dollar">$50</div>
+          <div class="impact-text">Covers one counseling session for a community member in trauma recovery. 💜</div>
+        </div>
+        <div class="impact-row">
+          <div class="impact-dollar">$100</div>
+          <div class="impact-text">Funds a week of peer support coordination, connecting neighbors to resources. 🤝</div>
+        </div>
+        <div class="impact-row">
+          <div class="impact-dollar">$250</div>
+          <div class="impact-text">Sponsors a full economic empowerment workshop for 15 community members. ⭐</div>
+        </div>
+        <div class="impact-row">
+          <div class="impact-dollar">$500+</div>
+          <div class="impact-text">Transforms a family's trajectory through comprehensive case management and support services. 🌈</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============================================================  OTHER WAYS  -->
+  <div style="background:linear-gradient(135deg,rgba(255,31,142,0.06),rgba(0,229,255,0.06));padding:80px 60px;">
+    <div style="max-width:960px;margin:0 auto;">
+      <p class="section-tag">Other Ways to Give 🎁</p>
+      <h2 class="section-title" style="margin-bottom:48px;">More ways to support the mission. 💜</h2>
+
+      <div class="other-ways-grid">
+        <div class="give-card" style="border-top:5px solid var(--yellow);">
+          <div class="give-icon">📬</div>
+          <h3>Mail a Check</h3>
+          <p>Make checks payable to "Unbreakable Chaney" and mail to our New Albany, Indiana address.</p>
+        </div>
+        <div class="give-card" style="border-top:5px solid var(--cyan);">
+          <div class="give-icon">🏦</div>
+          <h3>Employer Matching</h3>
+          <p>Double your impact. Check if your employer matches donations to nonprofits — many do! 🌈</p>
+        </div>
+        <div class="give-card" style="border-top:5px solid var(--magenta);">
+          <div class="give-icon">📜</div>
+          <h3>Planned Giving</h3>
+          <p>Leave a legacy by including Unbreakable Chaney in your estate planning. Contact us to learn more. 💖</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function selectAmount(btn) {
+      document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+      document.getElementById('customAmount').value = '';
+    }
+  </script>
+  <script src="js/nav.js"></script>
+</body>
+</html>
